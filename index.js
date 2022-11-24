@@ -3,7 +3,6 @@ const getPage = require('./src/getPage.js');
 
 const PORT = process.env.PORT || 5500;
 
-
 const server = http.createServer(
     async (req, res) => {
         try {
