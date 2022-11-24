@@ -26,3 +26,7 @@ const server = http.createServer(
 server.listen(PORT, () => {
     console.log(`Server is started at port: ${PORT}`)
 });
+
+server.on('error', (err) => {
+    console.log('error', err)
+});
