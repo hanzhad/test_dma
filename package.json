@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node index",
     "start:dev": "nodemon",
-    "pm2:stop": "pm2 stop all",
-    "prod": " pm2 start -f index.js",
-    "log": "pm2 logs"
+    "pm2:stop": "node ./node_modules/pm2/bin/pm2 stop all",
+    "prod": " node ./node_modules/pm2/bin/pm2 start -f index.js",
+    "log": "node ./node_modules/pm2/bin/pm2 logs"
   },
   "keywords": [],
   "author": "",
