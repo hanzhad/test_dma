@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index",
     "start:dev": "nodemon",
-    "prod": "pm2 start index.js",
+    "pm2:stop": "pm2 stop all",
+    "prod": " pm2 start -f index.js",
     "log": "pm2 logs"
   },
   "keywords": [],
